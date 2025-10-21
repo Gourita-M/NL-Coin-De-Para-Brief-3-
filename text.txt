@@ -1,0 +1,6 @@
+ismail = Categories 
+Halima = Home
+Mouad = Product 
+Khalid = FAQ
+Abdellah = Product Detail
+Brahim = About
