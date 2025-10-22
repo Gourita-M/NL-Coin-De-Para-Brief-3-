@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  text-decoration: none;
 }
 body{
   width: 100%;
@@ -16,6 +17,7 @@ main{
   flex-direction: column;
   align-items: center;
   color: rgba(46, 130, 191, 1);
+  gap: 1em;
 }
 .main-container img{
   width: 50%;
@@ -32,6 +34,7 @@ main{
   justify-content: center;
   align-items: center;
   gap: 1em;
+  margin-top: 2em;
 }
 .next-arraw{
   margin-top: 1em;
@@ -71,6 +74,33 @@ main{
 .images-pc div img{
   width: 39%;
 }
+
+.categories-product ul{
+  display: flex;
+  gap: 2em;
+}
+
+.categories-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  background-color: rgba(200, 242, 234, 1);
+  width: 75%;
+  height: 9em;
+  border-radius: 3em;
+  padding-top: 1em;
+}
+.categories-product ul a{
+  color: black;
+  font-size: 10%;
+}
+.categories-product ul a:hover{
+  color: rgb(160, 246, 231);
+
+}
+
 
 @media ( min-width: 800px){
 
