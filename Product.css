@@ -4,8 +4,12 @@
   border: 0;
   text-decoration: none;
 }
+header{
+  min-width: 576px;
+}
 body{
   width: 100%;
+  min-width: 576px;
 }
 
 main{
@@ -87,17 +91,17 @@ main{
   gap: 1em;
   margin-bottom: 2em;
   background-color: rgba(200, 242, 234, 1);
-  width: 75%;
+  width: 80%;
   height: 9em;
   border-radius: 3em;
   padding-top: 1em;
 }
 .categories-product ul a{
   color: black;
-  font-size: 10%;
+  font-size: 100%;
 }
 .categories-product ul a:hover{
-  color: rgb(160, 246, 231);
+  color: rgb(195, 58, 191);
 
 }
 
