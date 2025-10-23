@@ -5,7 +5,7 @@
     margin: 0;
     padding-top: 0px;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -36,25 +36,28 @@
     gap: 15px;
 }
 
- .img23 img {
+.img23 img {
     border: 1px solid rgb(206, 205, 205);
     border-radius: 15px;
     background-color: white;
     width: 450px;
     padding: 20px;
 }
-    
+
 
 .info1,
 .info2 {
     background-color: #BBEEF9;
-    padding: 25px;
+    padding: 15px;
     border-radius: 25px;
-    border: 1px solid rgb(206, 205, 205);
+    border: 1px solid rgb(112, 190, 205);
 }
 
 .info1 {
     width: 450px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .info2 {
@@ -70,69 +73,70 @@
 
 .btninfo1 {
     color: #ffffff;
-    font-size: 50px;
-    background-color: #2EBFA5;
+    font-size: 30px;
+    background-color: #28bea379;
     width: 55px;
-    height: 60px;
+    height: 40px;
     border-radius: 45px;
-    border: 1px solid black;
+    border: 1px solid rgb(208, 250, 245);
     cursor: pointer;
 }
 
 .btninfo2 {
     color: #ffffff;
-    font-size: 50px;
-    background-color: #2EBFA5;
+    font-size: 30px;
+    background-color: #28bea379;
     width: 70px;
-    height: 60px;
+    height: 40px;
     border-radius: 45px;
-    border: 1px solid black;
+    border: 1px solid rgb(208, 250, 245);
     cursor: pointer;
 }
 
 .btninfo3 {
     color: #ffffff;
-    font-size: 50px;
-    background-color: #2EBFA5;
+    font-size: 30px;
+    background-color: #28bea379;
     width: 55px;
-    height: 60px;
+    height: 40px;
     border-radius: 45px;
-    border: 1px solid black;
+    border: 1px solid rgb(208, 250, 245);
     cursor: pointer;
 }
 
 .buttoncont {
     align-items: center;
- 
     border-radius: 25px;
     padding: 8px 8px 8px 8px;
     margin: 10px;
-      
-} 
+
+}
 
 .btnprd {
     color: #ffffff;
     font-size: 21px;
     width: 300px;
-    height: 60px;
+    height: 50px;
     border-radius: 20px;
-    border: 1px solid black;
-    background-color:#2EBFA5;
+    border: 1px solid rgb(208, 250, 245);
+    background-color: #28bea379;
     cursor: pointer;
     transition: width 0.3 ease;
 }
 
 .btnprd:hover {
-    transition: scale(0.95);
-    background-color: rgb(232, 137, 137);
+    width: 280px;
+    background-color: rgb(160, 204, 255);
     color: white;
 }
-.buttoncont button :hover{
+
+.buttoncont button :hover {
     background-color: beige;
 }
+
 .topinfo {
     display: flex;
-    gap: 13px;
+    gap: 15px;
     margin-bottom: 15px;
     flex-wrap: wrap;
 }
@@ -145,7 +149,7 @@
 .buttominfo {
     display: flex;
     justify-content: space-between;
-    gap: 13px;
+    gap: 15px;
 }
 
 .serv,
@@ -172,7 +176,7 @@
     background-color: #D6F6FD;
     border-radius: 25px;
     border: 1px solid rgb(222, 222, 222);
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 15px;
 }
 
@@ -185,75 +189,87 @@
 
 .img23 {
     flex-direction: row;
-    gap: 8px;
+    gap: 15px;
 
+}
+
+.images,
+.info1,
+.info2,
+.serv,
+.livraison,
+.drsct1,
+.images {
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 .img23 img {
     height: 450px;
     flex: 1;
 }
-.drsct1{
+
+.drsct1 {
     background-color: #BBEEF9;
     border-radius: 25px;
     width: 290px;
     padding: 10px;
-    gap: 10px;
+    gap: 15px;
 }
 
-.dernierSection{
+.dernierSection {
     display: flex;
     justify-content: space-between;
-  
-    padding : 20px;
+    padding: 20px;
     border-radius: 25px;
-
     width: 100%;
-   
+
 }
 
 @media (min-width: 1024px) {
 
-.info1, .info2 {
- 
-  min-width: 592px;
- 
-}
-   .img23{
-    width: 430px;
-  }
+    .info1,
+    .info2 {
+
+        min-width: 592px;
+
+    }
+
+    .img23 {
+        width: 430px;
+    }
 }
 
 
 @media (max-width: 768px) {
-  .informatinproduit {
-    padding: 10px;
-  }
+    .informatinproduit {
+        padding: 10px;
+    }
 
-  .topinfo {
-    flex-direction: column;
-    align-items: center;
-  }
+    .topinfo {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .img23 {
-    flex-direction:column;
-    align-items: center;
-  }
+    .img23 {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .img23 img {
-    width: 90%;
-  }
+    .img23 img {
+        width: 90%;
+    }
 
-  .info1, .info2 {
-    width: 95%;
-  }
+    .info1,
+    .info2 {
+        width: 95%;
+    }
 
-  .buttominfo {
-    flex-direction: row;
-    gap: 10px;
-  }
+    .buttominfo {
+        flex-direction: row;
+        gap: 10px;
+    }
 }
- .dernierSection img{
-     border-radius: 20px;
- }
 
+.dernierSection img {
+    border-radius: 20px;
+}
