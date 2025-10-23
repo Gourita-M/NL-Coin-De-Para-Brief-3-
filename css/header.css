@@ -2,6 +2,12 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    padding-top: 20px;
+}
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--pramiry-color);
 }
 
 :root {
