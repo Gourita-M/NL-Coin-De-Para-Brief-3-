@@ -9,6 +9,12 @@ body {
     --premier-coleur: black;
 }
 
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--pramiry-color);
+}
+
 header {
     display: flex;
 }
@@ -53,11 +59,15 @@ a {
 
 }
 
-.search form input {
+.search  input {
     width: max(110px, 15vw);
     height: 25px;
     border: none;
     border-radius: 20px;
+    outline: none; 
+}
+.search:active {
+  border:  8px solid ;
 }
 
 .search button {
@@ -174,7 +184,7 @@ header>input {
         transition: 0.5s ease;
     }
 
-    header>input:checked ~.checkbox>div:nth-child(3) {
+    header>input:checked~.checkbox>div:nth-child(3) {
         transform: rotate(-45deg);
         width: 100%;
         margin: 0;
