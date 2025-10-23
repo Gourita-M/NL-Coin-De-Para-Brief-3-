@@ -2,10 +2,9 @@
 *{
 margin: 0px;
  
-
 } 
 
-@media (min-width: 370px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 767px){
 
 
 .about_section{
@@ -18,7 +17,7 @@ width:100%;
 
 .first_parte h1{
 
-   font-size: 120%;
+   font-size: 4vw;
 }
 
 
@@ -70,6 +69,7 @@ display: grid;
 
 .first_parte img{
   margin-left: 20px;
+  width: 47vw;
     
 }
 .first_parte h1{
@@ -84,7 +84,7 @@ display: grid;
 .first_parte  p{
     margin: 20px;
      
-    font-size: 18px;
+     font-size: 2vw;
  
 
 
@@ -302,8 +302,9 @@ display: grid;
 }
 .first_parte  p{
        
-    font-size: 19px;
+    font-size: 1.4vw;
      text-align: start;
+     margin-bottom: 30px;
       
       
 
