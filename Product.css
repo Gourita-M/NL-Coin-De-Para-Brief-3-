@@ -4,12 +4,9 @@
   border: 0;
   text-decoration: none;
 }
-header{
-  min-width: 576px;
-}
 body{
   width: 100%;
-  min-width: 576px;
+  min-width: 676px;
 }
 
 main{
@@ -40,6 +37,12 @@ main{
   gap: 1em;
   margin-top: 2em;
 }
+.images-phone a{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .next-arraw{
   margin-top: 1em;
   width: 100%;
@@ -47,6 +50,7 @@ main{
   display: flex;
   justify-content: center;
   gap: 10em;
+  position: relative;
 }
 .next-arraw div{
   display: flex;
@@ -62,23 +66,41 @@ main{
   width: 1.5em;
   height: 2em;
 }
+
+
 .images-pc{
   width: 100%;
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .images-pc div{
-  width: 100%;
+  width: 70%;
+}
+.images-pc div a img{
+      width: 100%;
+      
+      display: flex;
+      justify-content: center;
+}
+.midle-img{
   display: flex;
-  justify-content: center;
-  gap: 2em;
+  height: 100%;
 }
-.images-pc div img{
-  width: 39%;
+.midle-img a{
+  display: flex;
+  transition: all 0.4s ease;
 }
-
+.midle-img a:hover{
+  transform: scale(1.05);
+}
+.pc-hover-image{
+  transition: all 0.4s ease;
+}
+.pc-hover-image:hover{
+  transform: scale(1.05);
+}
 .categories-product ul{
   display: flex;
   gap: 2em;
@@ -97,11 +119,38 @@ main{
   padding-top: 1em;
 }
 .categories-product ul a{
+  transition: all 0.4s ease;
   color: black;
   font-size: 100%;
 }
 .categories-product ul a:hover{
   color: rgb(195, 58, 191);
+}
+.images-phone a img{
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 204, 0);
+  border-radius: 35px;
+}
+.images-phone a img:hover{
+  transform: scale(1.05);
+  background-color: transparent;
+  
+}
+
+/*  dyol l animation */
+.input{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 305px;
+}
+.input2{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bo
+}
+#switch-next:checked{
 
 }
 
