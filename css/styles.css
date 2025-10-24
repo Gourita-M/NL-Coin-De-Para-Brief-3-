@@ -44,8 +44,6 @@
     width: 450px;
     padding: 20px;
 }
-
-
 .info1,
 .info2 {
     background-color: #BBEEF9;
@@ -53,25 +51,21 @@
     border-radius: 25px;
     border: 1px solid rgb(112, 190, 205);
 }
-
 .info1 {
     width: 450px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .info2 {
     width: 450px;
     text-align: center;
 }
-
 .btninf1 {
     width: 30px;
     height: 40px;
     font-size: 30px;
 }
-
 .btninfo1 {
     color: #ffffff;
     font-size: 30px;
@@ -81,8 +75,9 @@
     border-radius: 45px;
     border: 1px solid rgb(208, 250, 245);
     cursor: pointer;
+    transition: width 0.4s ease;
+        cursor: pointer;
 }
-
 .btninfo2 {
     color: #ffffff;
     font-size: 30px;
@@ -93,7 +88,6 @@
     border: 1px solid rgb(208, 250, 245);
     cursor: pointer;
 }
-
 .btninfo3 {
     color: #ffffff;
     font-size: 30px;
@@ -103,6 +97,7 @@
     border-radius: 45px;
     border: 1px solid rgb(208, 250, 245);
     cursor: pointer;
+    transition: width 0.4s ease;
 }
 
 .buttoncont {
@@ -110,9 +105,7 @@
     border-radius: 25px;
     padding: 8px 8px 8px 8px;
     margin: 10px;
-
 }
-
 .btnprd {
     color: #ffffff;
     font-size: 21px;
@@ -122,15 +115,25 @@
     border: 1px solid rgb(208, 250, 245);
     background-color: #28bea379;
     cursor: pointer;
-    transition: width 0.3s ease;
+    transition: width 0.4s ease;
 }
 
 .btnprd:hover {
     width: 320px;
-    background-color: rgb(160, 204, 255);
+    background-color: rgb(128, 187, 255);
     color: white;
 }
+.btninfo1:hover{
+    width: 57px;
+     background-color: rgb(128, 187, 255);
+    
+}
+.btninfo3:hover{
+    width: 57px;
 
+     background-color: rgb(128, 187, 255);
+    
+}
 
 .topinfo {
     display: flex;
@@ -161,6 +164,12 @@
     border: 1px solid rgb(206, 205, 205);
     flex: 1;
     
+}
+.elemnt1_1{
+  font-size: larger;
+   gap: 6px;
+display: flex;
+   align-items: center;  
 }
 
 .serv img,
@@ -198,7 +207,7 @@
 .serv,
 .livraison,
 .drsct1,
-.images {
+.images, .drsct1 {
     box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -210,7 +219,7 @@
      border-radius: 25px;
 }
 .dernierSection {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
