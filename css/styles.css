@@ -2,7 +2,8 @@
 
 
 * {
-    margin: 0;
+    margin:0px;
+
     padding-top: 0px;
     box-sizing: border-box;
 
@@ -17,7 +18,7 @@
 
 .images {
     display: flex;
-    gap: 15px;
+       gap: 10px;
     background-color: #D6F6FD;
     padding: 20px;
     border: 1px solid rgb(206, 205, 205);
@@ -33,7 +34,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 15px;
+       gap: 10px;
 }
 
 .img23 img {
@@ -121,35 +122,32 @@
     border: 1px solid rgb(208, 250, 245);
     background-color: #28bea379;
     cursor: pointer;
-    transition: width 0.3 ease;
+    transition: width 0.3s ease;
 }
 
 .btnprd:hover {
-    width: 280px;
+    width: 320px;
     background-color: rgb(160, 204, 255);
     color: white;
 }
 
-.buttoncont button :hover {
-    background-color: beige;
-}
 
 .topinfo {
     display: flex;
-    gap: 15px;
+      gap: 10px;
     margin-bottom: 15px;
     flex-wrap: wrap;
 }
 
 .img23 img {
-    margin: 10;
+    margin: 5px;
     border-radius: 25;
 }
 
 .buttominfo {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+       gap: 10px;
 }
 
 .serv,
@@ -159,9 +157,10 @@
     border-radius: 25px;
     display: flex;
     align-items: center;
-    gap: 15px;
+      gap: 10px;
     border: 1px solid rgb(206, 205, 205);
     flex: 1;
+    
 }
 
 .serv img,
@@ -189,7 +188,7 @@
 
 .img23 {
     flex-direction: row;
-    gap: 15px;
+      gap: 10px;
 
 }
 
@@ -200,29 +199,34 @@
 .livraison,
 .drsct1,
 .images {
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 .img23 img {
     height: 450px;
     flex: 1;
 }
-
-.drsct1 {
-    background-color: #BBEEF9;
-    border-radius: 25px;
-    width: 290px;
-    padding: 10px;
-    gap: 15px;
+.dernierSection img{
+     border-radius: 25px;
+}
+.dernierSection {
+  padding: 20px;
+  display: flex;
+  cursor: pointer;
+  
+  
+}
+.drsct1:hover{
+  transform:   scale(1.02)  ;
 }
 
-.dernierSection {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 25px;
-    width: 100%;
-
+.drsct1 {
+  background-color: #BBEEF9;
+  border-radius: 25px;
+   text-align: center;
+  margin: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 1024px) {
@@ -237,6 +241,7 @@
     .img23 {
         width: 430px;
     }
+   
 }
 
 
@@ -268,8 +273,11 @@
         flex-direction: row;
         gap: 10px;
     }
+     .drsct1 {
+    width: 45%; 
+  }
+   .dernierSection {
+        flex-direction: column;
+    }
 }
 
-.dernierSection img {
-    border-radius: 20px;
-}
