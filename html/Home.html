@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/Home.css">
         <title>Home</title>
     </head>
@@ -47,10 +48,10 @@
                         <p>Your trusted source for wellness, skincare, and health essentials.</p>
                     </hgroup>
                     <div>
-                        <button class="button button--background">Browse Products</button>
+                        <a href="../html/categories.html"><button class="button button--background">Browse Products</button></a>
                         <div>
                             <button class="button button--background">Subscribe</button>
-                            <button class="button button--background hide">Contact Us</button>
+                            <a href="../html/FAQ.html"><button class="button button--background hide">Contact Us</button></a>
                         </div>
                     </div>
                 </div>
@@ -83,16 +84,16 @@
             <!-- section gallery -->
             <section class="section">
                 <h2>The best-selling products</h2>
-                <div>
-                    <div class="hide">
-                        <span>
-                            <img src="../images/pexels-linda-prebreza-87411-286951.jpg" alt="">
-                            <img src="../images/pexels-alesiakozik-7795398.jpg" alt="">
-                            <img src="../images/pexels-suzyhazelwood-2536965.jpg" alt="">
-                        </span>
-                        <span>
+                <div class="hide gallery-pc">
+                    <div class="principal_product">
+                        <div class="grid1">
+                            <img class="item1" src="../images/pexels-linda-prebreza-87411-286951.jpg" alt="">
+                            <img class="item2" src="../images/pexels-alesiakozik-7795398.jpg" alt="">
+                            <img class="item3" src="../images/pexels-suzyhazelwood-2536965.jpg" alt="">
+                        </div>
+                        <div class="details">
                             <h3>Nt treatment</h3>
-                            <span>
+                            <div>
                                 <p>
                                     Price
                                     <p>250 MAD</p>
@@ -111,21 +112,43 @@
                                     Category
                                     <p>Body</p>
                                 </p>
-                            </span>
+                            </div>
                             <button class="button button--background">More details</button>
-                        </span>
+                        </div>
                     </div>
-                    <div>
+                    <div class="grid2">
                         <img src="../images/pexels-craytive-2721977.jpg" alt="">
-                        <img src="../" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <img src="../images/pexels-vie-studio-6167865.jpg" alt="">
+                        <img src="../images/hyal.jpg" alt="">
+                        <img src="../images/racine-vita-savon-naturel-au-soufre.webp" alt="">
+                        <img src="../images/savonnila.webp" alt="">
+                        <p>Makeup Brush...</p>
+                        <p>Cosmetic Bottles</p>
+                        <p>La Roche P...</p>
+                        <p>Natural Soap</p>
+                        <p>Black Soap</p>
+                    </div>
+                </div>
+                <div class="gallery-smartphone">
+                    <a href="../html/productDeteils.html">
+                        <div class="first">
+                            <p class="p--colored">1.5k</p>
+                            <svg fill="#000000" width="64px" height="64px" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-288,-432)"> <g transform="matrix(1,0,0,1,175.502,358)"> <path d="M127,76C128.902,82.086 139.296,83.853 139.296,91.986C139.296,99.283 135.26,103.931 126.963,103.884C119.597,103.842 113.316,92.425 121,85C121.803,90.146 123.385,89.837 125,90C122.985,83.822 123.4,80.968 127,76Z" style="fill:#FDD13F;"></path> </g> <g transform="matrix(1,0,0,1,175.502,358)"> <path d="M127.954,75.702C127.842,75.341 127.535,75.074 127.161,75.013C126.788,74.952 126.412,75.107 126.19,75.413C124.271,78.061 123.227,80.158 122.905,82.404C122.637,84.271 122.871,86.253 123.578,88.766C123.497,88.722 123.417,88.669 123.339,88.603C122.744,88.104 122.33,87.038 121.988,84.846C121.93,84.477 121.672,84.171 121.318,84.052C120.964,83.933 120.574,84.021 120.305,84.281C115.273,89.143 116.091,95.573 119.312,99.95C121.473,102.888 124.719,104.865 127.957,104.884C132.475,104.909 135.539,103.597 137.496,101.345C139.43,99.117 140.296,95.915 140.296,91.986C140.296,87.575 137.554,84.844 134.478,82.438C133.082,81.345 131.625,80.318 130.403,79.187C129.295,78.163 128.379,77.059 127.954,75.702ZM126.83,78.012C128.247,80.334 130.807,82.105 133.245,84.013C135.842,86.044 138.296,88.263 138.296,91.986C138.296,95.354 137.644,98.124 135.986,100.033C134.35,101.917 131.747,102.905 127.968,102.884C125.314,102.869 122.695,101.173 120.922,98.764C118.552,95.542 117.702,90.98 120.436,87.169C120.884,88.773 121.461,89.638 122.052,90.134C122.921,90.864 123.894,90.894 124.9,90.995C125.236,91.029 125.567,90.891 125.779,90.627C125.991,90.364 126.056,90.011 125.951,89.69C125.004,86.786 124.601,84.668 124.885,82.688C125.106,81.141 125.749,79.689 126.83,78.011L126.83,78.012Z" style="fill:#1990a7;"></path> </g> </g> </g></svg>
+                        </div>
+                    </a>
+                    <a href="../html/productDeteils.html">
+                        <div class="last">
+                        <p class="p--colored">2k</p>
+                        <svg fill="#000000" width="64px" height="64px" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-288,-432)"> <g transform="matrix(1,0,0,1,175.502,358)"> <path d="M127,76C128.902,82.086 139.296,83.853 139.296,91.986C139.296,99.283 135.26,103.931 126.963,103.884C119.597,103.842 113.316,92.425 121,85C121.803,90.146 123.385,89.837 125,90C122.985,83.822 123.4,80.968 127,76Z" style="fill:#FDD13F;"></path> </g> <g transform="matrix(1,0,0,1,175.502,358)"> <path d="M127.954,75.702C127.842,75.341 127.535,75.074 127.161,75.013C126.788,74.952 126.412,75.107 126.19,75.413C124.271,78.061 123.227,80.158 122.905,82.404C122.637,84.271 122.871,86.253 123.578,88.766C123.497,88.722 123.417,88.669 123.339,88.603C122.744,88.104 122.33,87.038 121.988,84.846C121.93,84.477 121.672,84.171 121.318,84.052C120.964,83.933 120.574,84.021 120.305,84.281C115.273,89.143 116.091,95.573 119.312,99.95C121.473,102.888 124.719,104.865 127.957,104.884C132.475,104.909 135.539,103.597 137.496,101.345C139.43,99.117 140.296,95.915 140.296,91.986C140.296,87.575 137.554,84.844 134.478,82.438C133.082,81.345 131.625,80.318 130.403,79.187C129.295,78.163 128.379,77.059 127.954,75.702ZM126.83,78.012C128.247,80.334 130.807,82.105 133.245,84.013C135.842,86.044 138.296,88.263 138.296,91.986C138.296,95.354 137.644,98.124 135.986,100.033C134.35,101.917 131.747,102.905 127.968,102.884C125.314,102.869 122.695,101.173 120.922,98.764C118.552,95.542 117.702,90.98 120.436,87.169C120.884,88.773 121.461,89.638 122.052,90.134C122.921,90.864 123.894,90.894 124.9,90.995C125.236,91.029 125.567,90.891 125.779,90.627C125.991,90.364 126.056,90.011 125.951,89.69C125.004,86.786 124.601,84.668 124.885,82.688C125.106,81.141 125.749,79.689 126.83,78.011L126.83,78.012Z" style="fill:#1990a7;"></path> </g> </g> </g></svg>
+                    </div>
+                    </a>
+                    <div class="under_product">
+                        <p>Scalp Brushes</p>
+                        <p>50MAD</p>
+                    </div>
+                    <div class="under_product">
+                        <p>beauty treatment</p>
+                        <p>200MAD</p>  
                     </div>
                 </div>
             </section>
@@ -147,12 +170,25 @@
                 </div>
             </article>
             <!-- section opening hours -->
-            <!-- <section class="section">
+            <section class="section">
                 <div class="div-hours">
                     <div>
                         <h2>Opening hours</h2>
                         <svg class="icon hide" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 8V12L14.5 14.5" stroke="#2EBFA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#2EBFA5" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
                     </div>
+                    <div>
+                        <div class="days div--center"><p>Monday - Friday</p></div>
+                        <div class="div--center"><p>8:00 to 18:00</p></div>
+                        
+                        <div class="days div--center"><p>Saturday</p></div>
+                        <div class="div--center"><p>8:00 to 12:00</p></div>
+                        
+                        <div class="days div--center"><p>Sunday</p></div>
+                        <div class="div--center"><p>Closed</p></div>
+                    </div>
+                </div>
+                <div class="hours-smartphone">
+                    <h2>Opening hours</h2>   
                     <div>
                         <div class="days">Monday - Friday</div>
                         <div>8:00 to 18:00</div>
@@ -164,7 +200,7 @@
                         <div>Closed</div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- section localisation -->
             <section class="section localisation">
                 <div class="hide">
@@ -184,40 +220,58 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.23103934276!2d2.1822229347184914!3d48.858737453662805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sma!4v1761233143888!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </main>
-        <footer>
-            <div>
+        <footer aria-label="Pied de page du site Coin de Para">
+            <div class="box-footer">
+
                 <div>
-                    <img src="../images/logo.png" alt="logo Coin DePara">
-                    <span>
-                        <span>
-                            <p>Coin DePara Parapharmacy</p>
-                            <address>12 Wellness Avenue<br>Safi 46000, Morocco</address>
-                        </span>
-                        <span>
-                            <a href="mailto:contact@coindepara.fr">contact@coindepara.fr</a>
-                            <a href="tel:+33142587690">+33 1 42 58 76 90</a>
-                        </span>
-                    </span>
+                    <img src="../images/logo.png" alt="Logo Coin de Para, parapharmacie en ligne">
+
                 </div>
                 <div>
-                    <a href="#" target="_blank">
-                        <svg class="icon" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier"> <title>Whatsapp-color</title> <desc>Created with Sketch.</desc> <defs> </defs> 
-                                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E"> <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z" id="Whatsapp"> </path> 
-                                </g> 
-                            </g> </g>
-                        </svg>
-                    </a>
-                    <a href="#" target="_blank">
-                        <svg class="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> <defs> <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> <stop stop-color="#B13589"></stop> <stop offset="0.79309" stop-color="#C62F94"></stop> <stop offset="1" stop-color="#8A3AC8"></stop> </radialGradient> <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> <stop stop-color="#E0E8B7"></stop> <stop offset="0.444662" stop-color="#FB8A2E"></stop> <stop offset="0.71474" stop-color="#E2425C"></stop> <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> </radialGradient> <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> <stop offset="0.156701" stop-color="#406ADC"></stop> <stop offset="0.467799" stop-color="#6A45BE"></stop> <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> </radialGradient> </defs> </g>
-                        </svg>
-                    </a>
-                    <a href="#" target="_blank">
-                        <svg class="icon" fill="#3276c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"></path> </g></svg>
-                    </a>
+
+                    <ul>
+                        <li>N 721, Route Casablanca</li>
+                        <li>Lot Misa,Safi,Maroc</li>
+                    </ul>
+
+                    <ul>
+                        <li>Phone: +212689570922</li>
+                        <li>Phone: +212689570922</li>
+                        <li><a href="mailto:Contact@Coindepara.ma">Contact@Coindepara.ma</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Nos Services</a></li>
+                        <li><a href="#">Contact Nous</a></li>
+                        <li><a href="#">Conseil Personnalisé</a></li>
+                        <li><a href="#">Service Client</a></li>
+                        <li><a href="#">Livraison</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <a href="#" aria-label="Suivez-nous sur Facebook">
+                            <!-- <img src="../images/icons8-facebook-90.png" alt="Icône du réseau social Facebook"> -->
+                            <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)"></circle> <path d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917" gradientUnits="userSpaceOnUse"> <stop stop-color="#18ACFE"></stop> <stop offset="1" stop-color="#0163E0"></stop> </linearGradient> </defs> </g></svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" aria-label="Suivez-nous sur Instagram">
+                            <!-- <img src="../images/icons8-instagram-96.png" alt="Icône Instagram"> -->
+                            <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> <defs> <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> <stop stop-color="#B13589"></stop> <stop offset="0.79309" stop-color="#C62F94"></stop> <stop offset="1" stop-color="#8A3AC8"></stop> </radialGradient> <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> <stop stop-color="#E0E8B7"></stop> <stop offset="0.444662" stop-color="#FB8A2E"></stop> <stop offset="0.71474" stop-color="#E2425C"></stop> <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> </radialGradient> <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> <stop offset="0.156701" stop-color="#406ADC"></stop> <stop offset="0.467799" stop-color="#6A45BE"></stop> <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> </radialGradient> </defs> </g></svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" aria-label="contactez-nous sur whatsapp">
+                            <!-- <img src="../images/icons8-whatsapp-96.png" alt="Icône whatsapp"> -->
+                             <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"></path> <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"></path> <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse"> <stop stop-color="#5BD066"></stop> <stop offset="1" stop-color="#27B43E"></stop> </linearGradient> </defs> </g></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </footer>
     </body>
 </html>
