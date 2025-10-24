@@ -118,7 +118,11 @@ header>input {
 
 
 
+<<<<<<< HEAD
 @media (max-width: 800px) {
+=======
+@media (max-width: 767px) {
+>>>>>>> Categories
     header {
         display: flex;
         flex-direction: column;
