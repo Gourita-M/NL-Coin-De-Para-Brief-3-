@@ -212,21 +212,25 @@
 .dernierSection {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   cursor: pointer;
-  
-  
 }
 .drsct1:hover{
   transform:   scale(1.02)  ;
 }
 
 .drsct1 {
+ 
   background-color: #BBEEF9;
   border-radius: 25px;
-   text-align: center;
+  text-align: center;
   margin: 10px;
   padding: 10px;
-  flex-wrap: wrap;
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
 }
 
 @media (min-width: 1024px) {
@@ -273,11 +277,14 @@
         flex-direction: row;
         gap: 10px;
     }
-     .drsct1 {
-    width: 45%; 
-  }
    .dernierSection {
-        flex-direction: column;
-    }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.drsct1 {
+  width: 45%; 
+}
 }
 
