@@ -118,7 +118,7 @@ header>input {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     header {
         display: flex;
         flex-direction: column;
