@@ -213,7 +213,7 @@ a:link {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 767px) {
 
     .box_categorie {
         gap: 2vw;
