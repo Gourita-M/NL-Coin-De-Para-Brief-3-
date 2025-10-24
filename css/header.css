@@ -9,6 +9,8 @@ body {
     --premier-coleur: black;
 }
 
+
+
 header {
     display: flex;
 }
@@ -36,8 +38,11 @@ nav ul li {
     font-weight: bold;
 }
 
-a {
+a,
+a:visited,
+a:link {
     text-decoration: none;
+    color: var(--premier-coleur);
 }
 
 .search {
@@ -53,12 +58,14 @@ a {
 
 }
 
-.search form input {
+.search input {
     width: max(110px, 15vw);
     height: 25px;
     border: none;
     border-radius: 20px;
+    outline: none;
 }
+
 
 .search button {
     width: 30px;
@@ -174,7 +181,7 @@ header>input {
         transition: 0.5s ease;
     }
 
-    header>input:checked ~.checkbox>div:nth-child(3) {
+    header>input:checked~.checkbox>div:nth-child(3) {
         transform: rotate(-45deg);
         width: 100%;
         margin: 0;

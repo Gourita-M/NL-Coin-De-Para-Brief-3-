@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root{
+    --accent-color1: #C8F2EA;
+    --accent-color2: #2EBFA5;
+    --primary-color: black;
+    --secondary-color: white;
+    --ff: 'Inter', sans-serif;
+    --h1-size: 61.04px;
+    --h2-size: 48.83px;
+    --h3-size: 1px;
+    --p-size: 16px;
+}
+
+* {
+    font-family: var(--ff);
+    font-size: var(--p-size);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    border: 1px solid rebeccapurple;
+}
+
+/***************************************************** Main *****************************************************/
+
+h1 {
+    font-family: var(--ff);
+    /* font-size: var(--h1-size); */
+    font-size: calc(1rem + 4vw);
+    font-weight: bold;
+    width: fit-content;
+    justify-self: center;
+}
+
+h2 {
+    font-family: var(--ff);
+    font-size: var(--h2-size);
+    width: fit-content;
+    justify-self: center;
+    font-weight: 500;
+}
+
+p, button {
+    font-family: var(--ff);
+    font-size: var(--p-size);
+    font-weight: 400;
+    width: fit-content;
+    justify-self: center;
+}
+
+.section {
+    width: 100%;
+    height: fit-content;
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--ff);
+    font-size: var(--p-size);
+    font-weight: 400;
+}
+
+/* section hero */
+
+.section--background {
+    background: url("../images/heroSection-artguru.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding: 57px;
+}
+
+.section--background > div {
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    row-gap: 60px;
+}
+
+.section--background > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+hgroup + div > div{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+hgroup {
+    width: fit-content;
+    text-align: center;
+    display: grid;
+    row-gap: 56px;
+}
+
+/* section opening hours */
+
+.div-hours {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 24px 16px;
+}
+
+.div-hours > div:first-child {
+    order: 2;
+    display: grid;
+    grid-template-rows: 2;
+    row-gap: 20px;
+    justify-items: center;
+}
+
+.div-hours > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.days {
+    background-color: #C8F2EA;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.div-hours > div:last-child > div:not(.days) {
+    border-top: 2px solid black;
+    background-color: #2EBFA5;
+}
+
+/* article */
+
+.article {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--accent-color1);
+}
+
+.article > div {
+    display: flex;
+    padding: 3% 0%;
+    justify-content: space-evenly;
+}
+
+.article > div > div {
+    height: fit-content;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+
+.article data {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+}
+
+.article p {
+    font-size: 20px;
+    font-weight: 500;
+    height: fit-content;
+}
+
+.article--background, .button--background {
+    background-color: var(--accent-color1);
+}
+
+.icon {
+    height: 68px;
+    width: 68px;
+}
+
+.informations {
+    /* display: grid;
+    row-gap: 10px; */
+}
+
+.input {
+    width: 90%;
+    border-width: 3px;
+    border-radius: 30px;
+    /* background: transparent; */
+    border-color: var(--accent-color2);
+    padding: 10px 10px;
+    position: relative;
+    left: 5%;
+    margin: 10px auto;
+}
+
+.input::placeholder {
+    color: var(--primary-color);
+}
+
+/* Localisation */
+.localisation {
+    display: flex;
+}
+
+.localisation h2 {
+    margin-bottom: 5%;
+}
+
+.localisation > div > div > div:last-child {
+    justify-self: center;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .localisation > div {
+    display: grid;
+    row-gap: calc(3rem - 0.5vh);
+    justify-content: center;
+} */
+
+
+
+@media(max-width: 767px) {
+.hide {
+        display: none;
+}
+
+.section--background > div {
+        width: fit-content;
+}
+
+hgroup + div > div {
+        width: fit-content;
+}
+
+.div-hours {
+    display: flex;
+}
+
+.div-hours > div:last-child {
+        display: block;
+        width: fit-content;
+        justify-self: center;
+}
+
+ iframe {
+        width: 100%;
+}
+.informations{
+    
+}
+.input {
+    
+    
+}
+}
+/***************************************************** Footer *****************************************************/
