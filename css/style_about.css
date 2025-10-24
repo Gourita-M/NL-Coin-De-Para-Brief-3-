@@ -184,6 +184,10 @@ color: #2EBFA5;
 
 }
 
+.control_fin::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
 
 
 
