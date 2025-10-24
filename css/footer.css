@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+:root{
+    --fream-color :#C8F2EA;
+    --pramiry-color:black;
+    --third-color :white;
+    --forth-color:silver;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.box-footer {
+   
+    
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size:  clamp(0.5rem, 1.3vw, 1.3rem);
+    font-weight: normal;
+    background-color: var(--fream-color);
+}
+
+.box-footer ul {
+    list-style: none;
+}
+
+.box-footer li {
+    margin-top: 10px;
+}
+
+.box-footer div:first-child {
+    width: 20vw;
+    height: 20vw;
+}
+
+.box-footer div:first-child img {
+    position: relative;
+    top: 2vw;
+    width: 20vw;
+}
+
+.box-footer div:nth-child(2) {
+    width: 70vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-footer div:nth-child(3) {
+    width: 40vw;
+    height: 20vw;
+    display: none;
+}
+
+.box-footer div:nth-child(3) li:first-child {
+    font-weight: bold;
+}
+
+.box-footer div:last-child {
+    height: 6vw;
+    width: 30vw;
+    display: flex;
+    gap: 2vw;
+    justify-content: space-evenly;
+}
+
+.box-footer div:last-child>div {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box-footer div:last-child>div:hover {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    background-color: var(--forth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-footer div:last-child>div img {
+    width: 2.6vw;
+    height: 2.6vw;
+    justify-self: center;
+    top: 0;
+
+}
+
+@media (min-width: 800px) {
+
+    .box-footer div:nth-child(2) {
+        width: 30vw;
+        display: block;
+    }
+
+    .box-footer div:nth-child(3) {
+        display: block;
+    }
+
+
+}
