@@ -12,6 +12,7 @@ body{
 main{
   width: 100%;
   margin-top: 5%;
+  position: relative;
 }
 .main-container{
   display: flex;
@@ -38,11 +39,29 @@ main{
   margin-top: 2em;
 }
 .images-phone a{
-  width: 90%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+.images-phone2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.images-phone2 a{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .next-arraw{
   margin-top: 1em;
   width: 100%;
@@ -56,11 +75,9 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:rgba(46, 173, 191, 1);
   width: 3em;
   height: 3em;
   border-radius: 50%;
-  cursor: pointer;
 }
 .next-arraw div img{
   width: 1.5em;
@@ -84,6 +101,24 @@ main{
       display: flex;
       justify-content: center;
 }
+
+.images-pc1{
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.images-pc1 div{
+  width: 70%;
+}
+.images-pc1 div a img{
+      width: 100%;
+      
+      display: flex;
+      justify-content: center;
+}
+
 .midle-img{
   display: flex;
   height: 100%;
@@ -137,22 +172,18 @@ main{
   
 }
 
-/*  dyol l animation */
-.input{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 305px;
+.images-phone2 a img{
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 204, 0);
+  border-radius: 35px;
 }
-.input2{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  bo
+.images-phone2 a img:hover{
+  transform: scale(1.05);
+  background-color: transparent;
+  
 }
-#switch-next:checked{
 
-}
+
 
 
 @media ( min-width: 800px){
@@ -160,7 +191,69 @@ main{
      .images-phone{
       display: none;
      }
+     .images-phone2{
+      display: none;
+     }
      .images-pc{
       display: flex;
      }
+     .images-pc1{
+      display: flex;
+     }
 }
+
+
+/*   */
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.buttons label {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.buttons label:hover {
+  background: #aaa;
+}
+#switch-next:checked ~ .buttons label[for="switch-next"],
+#switch-back:checked ~ .buttons label[for="switch-back"]{
+  background: tomato;
+  color: white;
+}
+
+/* When selected, show that set */
+#switch-next:checked ~ .images-phone {
+  display: none;
+  
+}
+
+#switch-back:checked ~ .images-phone2 {
+  display: none;
+  
+}
+
+
+#switch-next:checked ~ .images-pc {
+  display: none;
+  
+}
+
+#switch-back:checked ~ .images-pc1 {
+  display: none;
+  
+}
+
+
