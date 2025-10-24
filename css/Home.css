@@ -12,7 +12,6 @@
     --p-size: 16px;
 }
 
-/*   */
 * {
     font-family: var(--ff);
     font-size: var(--p-size);
@@ -20,11 +19,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body * {
-    border: 1px solid rebeccapurple;
-}
-
 /***************************************************** Main *****************************************************/
 
 h1 {
@@ -40,6 +34,14 @@ h2 {
     font-family: var(--ff);
     /* font-size: var(--h2-size); */
     font-size: calc(1rem + 3vw);
+    width: fit-content;
+    justify-self: center;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: var(--ff);
+    font-size: calc(1rem + 2vw);
     width: fit-content;
     justify-self: center;
     font-weight: 500;
@@ -121,6 +123,17 @@ hgroup {
     flex-direction: column;
     width: 60%;
     row-gap: 20px;
+    align-items: center;
+}
+
+.details svg {
+    height: 20px;
+    width: fit-content;
+}
+
+.details > div > div {
+    display: flex;
+    gap: 10px;
 }
 
 .principal_product {
