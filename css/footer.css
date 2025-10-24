@@ -5,6 +5,7 @@
     --fream-color :#C8F2EA;
     --pramiry-color:black;
     --third-color :white;
+    --forth-color:silver;
 }
 
 body {
@@ -13,12 +14,12 @@ body {
 
 .box-footer {
    
-    height: 30vw;
+    
     display: flex;
     gap: 1vw;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: clamp(0.2rem, 2vw, 1.4rem);
+    font-size:  clamp(0.5rem, 1.3vw, 1.3rem);
     font-weight: normal;
     background-color: var(--fream-color);
 }
@@ -68,8 +69,8 @@ body {
 }
 
 .box-footer div:last-child>div {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 100%;
     background-color: var(--third-color);
     display: flex;
@@ -77,10 +78,20 @@ body {
     align-items: center;
 
 }
+.box-footer div:last-child>div:hover {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    background-color: var(--forth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .box-footer div:last-child>div img {
-    width: 3vw;
-    height: 3vw;
+    width: 2.6vw;
+    height: 2.6vw;
     justify-self: center;
     top: 0;
 
