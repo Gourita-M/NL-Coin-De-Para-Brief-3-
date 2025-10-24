@@ -97,7 +97,7 @@ body {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 767px) {
 
     .box-footer div:nth-child(2) {
         width: 30vw;
