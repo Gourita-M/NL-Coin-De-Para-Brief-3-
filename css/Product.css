@@ -121,9 +121,10 @@ main{
 
 .midle-img{
   display: flex;
-  height: 100%;
+  width: 100%;
 }
 .midle-img a{
+  width: 100%;
   display: flex;
   transition: all 0.4s ease;
 }
