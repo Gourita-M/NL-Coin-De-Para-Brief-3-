@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+body{
+  width: 100%;
+  min-width: 676px;
+}
+
+main{
+  width: 100%;
+  margin-top: 5%;
+  position: relative;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(46, 130, 191, 1);
+  gap: 1em;
+}
+.main-container img{
+  width: 50%;
+  margin-bottom: 1%;
+}
+.main-container div img{
+  width: 80%;
+  margin-bottom: 1%;
+}
+.images-phone{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.images-phone a{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.images-phone2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+.images-phone2 a{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-arraw{
+  margin-top: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  position: relative;
+}
+.next-arraw div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+.next-arraw div img{
+  width: 1.5em;
+  height: 2em;
+}
+
+
+.images-pc{
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.images-pc div{
+  width: 70%;
+}
+.images-pc div a img{
+      width: 100%;
+      
+      display: flex;
+      justify-content: center;
+}
+
+.images-pc1{
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.images-pc1 div{
+  width: 70%;
+}
+.images-pc1 div a img{
+      width: 100%;
+      
+      display: flex;
+      justify-content: center;
+}
+
+.midle-img{
+  display: flex;
+  width: 100%;
+}
+.midle-img a{
+  width: 100%;
+  display: flex;
+  transition: all 0.4s ease;
+}
+.midle-img a:hover{
+  transform: scale(1.05);
+}
+.pc-hover-image{
+  transition: all 0.4s ease;
+}
+.pc-hover-image:hover{
+  transform: scale(1.05);
+}
+.categories-product ul{
+  display: flex;
+  gap: 2em;
+}
+
+.categories-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  background-color: rgba(200, 242, 234, 1);
+  width: 80%;
+  height: 9em;
+  border-radius: 3em;
+  padding-top: 1em;
+}
+.categories-product ul a{
+  transition: all 0.4s ease;
+  color: black;
+  font-size: 100%;
+}
+.categories-product ul a:hover{
+  color: rgb(195, 58, 191);
+}
+.images-phone a img{
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 204, 0);
+  border-radius: 35px;
+}
+.images-phone a img:hover{
+  transform: scale(1.05);
+  background-color: transparent;
+  
+}
+
+.images-phone2 a img{
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 rgba(0, 255, 204, 0);
+  border-radius: 35px;
+}
+.images-phone2 a img:hover{
+  transform: scale(1.05);
+  background-color: transparent;
+  
+}
+
+
+
+
+@media ( min-width: 800px){
+
+     .images-phone{
+      display: none;
+     }
+     .images-phone2{
+      display: none;
+     }
+     .images-pc{
+      display: flex;
+     }
+     .images-pc1{
+      display: flex;
+     }
+}
+
+
+/*   */
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.buttons label {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.buttons label:hover {
+  background: #aaa;
+}
+#switch-next:checked ~ .buttons label[for="switch-next"],
+#switch-back:checked ~ .buttons label[for="switch-back"]{
+  background: tomato;
+  color: white;
+}
+
+/* When selected, show that set */
+#switch-next:checked ~ .images-phone {
+  display: none;
+  
+}
+
+#switch-back:checked ~ .images-phone2 {
+  display: none;
+  
+}
+
+
+#switch-next:checked ~ .images-pc {
+  display: none;
+  
+}
+
+#switch-back:checked ~ .images-pc1 {
+  display: none;
+  
+}
+
+
