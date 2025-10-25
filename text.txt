@@ -5,4 +5,8 @@ Khalid = FAQ
 Abdellah = Product Detail
 Brahim = About
 
+<<<<<<< HEAD
 Conseil: documenter votre code dans readme
+=======
+Conseil: documenter votre code dans readme
+>>>>>>> Categories
