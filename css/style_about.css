@@ -1,0 +1,330 @@
+
+*{
+margin: 0px;
+ 
+} 
+
+@media (min-width: 320px) and (max-width: 767px){
+
+
+.about_section{
+   
+width:100%;
+
+ 
+
+}
+
+.first_parte h1{
+
+   font-size: 4vw;
+}
+
+
+
+.first_parte  p{
+     
+    width: 130%;
+    
+
+}
+
+
+.control_sect h3{
+ font-size: 60%;
+
+
+
+
+}
+
+}
+
+
+
+
+.about_section{
+   
+ 
+padding-top: 40px;
+ 
+
+}
+
+ 
+
+
+.first_parte{
+ 
+width: 100%;
+display: grid;
+ grid-template-columns: 50% auto;
+ grid-template-rows: auto auto;
+   gap: 3%;  
+   
+ 
+}
+
+
+
+.first_parte img{
+  margin-left: 20px;
+  width: 47vw;
+    
+}
+.first_parte h1{
+
+ color: #2EBFA5;
+ text-align: start;
+ padding-top: 20px;
+  
+
+
+}
+.first_parte  p{
+    margin: 20px;
+     
+     font-size: 2vw;
+ 
+
+
+}
+
+
+.statique{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  
+    
+     
+     
+}
+
+ 
+.statique h2{
+  text-align: center;
+  margin: 10%;
+
+  color:  #2EBFA5;
+  
+
+}
+
+
+.control_sect{
+
+
+display: flex;
+justify-content: space-around;
+
+ overflow-x: auto; 
+overflow-y:hidden;
+
+
+}
+
+.control_sect h3{
+padding: 20px;
+background-color:#008448 ;
+color: white;
+border-radius: 20px;
+
+
+
+
+}
+.control_sect h3:hover{
+      border: 2px solid #3498db;          
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);  
+  transform: scale(1.05); 
+
+}
+
+.h_control{
+
+   display: flex;
+   justify-content: center;
+   margin-top: 60px;
+
+
+}
+.h_control h3{
+
+ 
+margin: 20px;
+width: 210px;
+text-align: center;
+height: 25px;
+border-radius: 14px;
+color: #2EBFA5;
+
+ font-size: 24px;
+
+
+
+}
+
+
+
+.control_fin{
+
+    display: flex;
+  gap: 20px;                     /* espace entre les cartes */
+  overflow-x: auto;              /* scroll horizontal */
+  overflow-y: hidden;            /* pas de scroll vertical */
+         /* défilement fluide */
+ 
+  margin-top: 10px;
+  padding: 40px 20px;
+   
+
+
+}
+
+.control_fin::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+
+
+
+.cont_fin_about_control{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+
+        padding: 30px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+                    /* garde la taille fixe (important pour le scroll horizontal) */
+ 
+   
+  border-radius: 12px;
+   
+  transition: transform 0.3s ease;
+  
+}
+
+.cont_fin_about_control:hover {
+  transform: scale(1.05);
+}
+
+
+.cont_fin_about_control img{
+
+  width:  140px;
+  height:  140px;
+
+  border-radius: 100%;
+}
+
+
+.cont_fin_about_control h4{
+
+  text-align: center;
+  margin: 9px;
+  background-color: #2EBFA5;
+  border-radius: 15px;
+
+}
+
+.cont_fin_about_control p{
+margin: 10px;
+ text-align: center;
+ margin-bottom: 80px;
+background-color: #2EBFA5;
+border-radius: 15px;
+padding: 3px;
+ 
+}
+
+
+
+@media (min-width: 1024px){
+
+ *{
+     margin: 0px;
+} 
+
+
+.about_section{
+   
+width:100%;
+ 
+padding-top: 40px
+ 
+
+}
+
+
+
+.first_parte{
+ 
+width: 100%;
+display: grid;
+ grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 1fr 1fr; 
+    height: 100vh;
+
+}
+
+.first_parte img{
+
+
+  margin-left: 20px;
+  border-radius: 100%;
+   width: 90%;
+
+  grid-row: 1 / span 2;
+
+}
+
+
+.first_parte img:hover{
+
+  transform: scale(1.05); 
+}
+
+
+.first_parte h1{
+ 
+ color: #2EBFA5;
+ text-align: start;
+ padding-top: 20px;
+ font-size: 40px;
+ margin-left: 30px;
+ margin-top: 30px;
+ 
+
+
+}
+.first_parte  p{
+       
+    font-size: 1.4vw;
+     text-align: start;
+     margin-bottom: 30px;
+      
+      
+
+    
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
